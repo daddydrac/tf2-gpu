@@ -7,7 +7,7 @@ If you want to skip the build process to save time you can pull the pre-built im
 
 https://hub.docker.com/r/jhoeller/tf2-gpu
 
-``` docker pull jhoeller/tf2-gpu ```
+``` docker pull jhoeller/tf2-gpu:default ```
 
 -----------------------------------------------------------
 
