@@ -120,6 +120,7 @@ RUN conda update -n base -c defaults conda
 RUN conda install -c anaconda jupyter 
 
 RUN conda update conda
+RUN conda update --all
 RUN conda install numba
 RUN conda install -c anaconda ipykernel 
 RUN conda install -c anaconda seaborn 
@@ -127,6 +128,8 @@ RUN conda install -c anaconda ipython
 RUN conda install -c conda-forge tensorboard
 RUN conda install dask
 RUN conda install dask-kubernetes -c conda-forge
+RUN conda install ipykernel
+
 
 
 WORKDIR /app
