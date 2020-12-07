@@ -68,7 +68,6 @@ ENV PATH /opt/conda/bin:$PATH
 # ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
 ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
 
-
 ARG PYTHON=python3
 ARG PIP=pip3
 
@@ -129,6 +128,7 @@ RUN conda install dask-kubernetes -c conda-forge
 
 WORKDIR /app
 EXPOSE 8888 6006
+ENV PATH="$HOME/.local/bin:$PATH
 
 # Better container security versus running as root
 RUN useradd -ms /bin/bash container_user
