@@ -128,7 +128,7 @@ RUN conda install dask-kubernetes -c conda-forge
 
 WORKDIR /app
 EXPOSE 8888 6006
-ENV PATH="$HOME/.local/bin:$PATH
+ENV PATH="$HOME/.local/bin:$PATH"
 
 # Better container security versus running as root
 RUN useradd -ms /bin/bash container_user
