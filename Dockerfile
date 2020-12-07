@@ -112,6 +112,7 @@ RUN pip install yellowbrick
 RUN pip install hiplot-mlflow 
 RUN pip install mlflow-extend 
 RUN pip install seldon-deploy-sdk 
+RUN pip install jupyterlab
 
 RUN conda update -n base -c defaults conda
 RUN conda install -c anaconda jupyter 
