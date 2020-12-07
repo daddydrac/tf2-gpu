@@ -112,6 +112,9 @@ RUN pip install hiplot-mlflow
 RUN pip install mlflow-extend 
 RUN pip install seldon-deploy-sdk 
 RUN pip install jupyterlab
+RUN pip install s3contents
+RUN pip install hybridcontents
+RUN pip install s3fs
 
 RUN conda update -n base -c defaults conda
 RUN conda install -c anaconda jupyter 
