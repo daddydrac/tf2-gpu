@@ -101,6 +101,17 @@ RUN pip install shap
 RUN pip install tensor-sensor 
 RUN pip install fastapi
 RUN pip install tensorflow
+RUN pip install dask-cuda
+RUN pip install dask-ml 
+RUN pip install wandb 
+RUN pip install dask-optuna 
+RUN pip install optuna 
+RUN pip install jupyter-bokeh 
+RUN pip install bokeh 
+RUN pip install yellowbrick 
+RUN pip install hiplot-mlflow 
+RUN pip install mlflow-extend 
+RUN pip install seldon-deploy-sdk 
 
 RUN conda update -n base -c defaults conda
 RUN conda install -c anaconda jupyter 
@@ -111,7 +122,8 @@ RUN conda install -c anaconda ipykernel
 RUN conda install -c anaconda seaborn 
 RUN conda install -c anaconda ipython
 RUN conda install -c conda-forge tensorboard
-
+RUN conda install dask
+RUN conda install dask-kubernetes -c conda-forge
 
 
 WORKDIR /app
