@@ -3,11 +3,7 @@ A complete computer vision container that includes Jupyter notebooks with built-
 
 -----------------------------------------------------------
 
-If you want to skip the build process to save time you can pull the pre-built image from DockerHub here:
-
-https://hub.docker.com/r/jhoeller/tf2-gpu
-
-``` docker pull jhoeller/tf2-gpu:default ```
+`
 
 -----------------------------------------------------------
 
